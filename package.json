@@ -1,0 +1,22 @@
+{
+  "name": "geeparts-js",
+  "version": "1.0.0",
+  "description": "Code main page Geeparts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsi15/geeparts-js.git"
+  },
+  "keywords": [
+    "geeparts"
+  ],
+  "author": "John Serrano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnsi15/geeparts-js/issues"
+  },
+  "homepage": "https://github.com/johnsi15/geeparts-js#readme"
+}
