@@ -565,16 +565,25 @@ if (pathName === '/hero/' || pathName === '/hero') {
           </div>
           </a>
         </li>
-<li class="moto">
+        <li class="moto">
           <a href="https://www.geeparts.co/yamaha/fz-3-0/" class="link_marca">
             <img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1719692875/multiparts-colombia/yamaha/m4cuezngw4dycqebimhg.webp" alt="fz-3-0">
           <div class="info">
-            <p>FZ 3.0</p>
+            <p>FZ 3.0 sin actualizaciones</p>
           </div>
           </a>
         </li>
         </li>
-<li class="moto">
+        <li class="moto">
+          <a href="https://www.geeparts.co/yamaha/fz-3-0-2/" class="link_marca">
+            <img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1719692875/multiparts-colombia/yamaha/m4cuezngw4dycqebimhg.webp" alt="fz-3-0">
+          <div class="info">
+            <p>FZ 3.0 con actualizaciones</p>
+          </div>
+          </a>
+        </li>
+        </li>
+        <li class="moto">
           <a href="https://www.geeparts.co/yamaha/aerox-155/" class="link_marca">
             <img src="https://download.geeparts.co/Aerox-c-abs-1000x1000-1-1.png" alt="aerox">
           <div class="info">
@@ -865,22 +874,30 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</div>
 		</a>
 	</li>
-  <li class="moto">
-		<a href="https://www.geeparts.co/ducati/hypermotard-950/" class="link_marca">
-			<img src="https://download.geeparts.co/hypermotard-950.png" alt="Hypermotard 950">
-		<div class="info">
-			<p>Hypermotard 950</p>
-		</div>
-		</a>
-	</li>
-  <li class="moto">
-		<a href="https://www.geeparts.co/ducati/multistrada-950/" class="link_marca">
-			<img src="https://download.geeparts.co/enduro-950.png" alt="Multistrada 950">
-		<div class="info">
-			<p>Multistrada 950</p>
-		</div>
-		</a>
-	</li>
+    <li class="moto">
+      <a href="https://www.geeparts.co/ducati/hypermotard-950/" class="link_marca">
+        <img src="https://download.geeparts.co/hypermotard-950.png" alt="Hypermotard 950">
+      <div class="info">
+        <p>Hypermotard 950</p>
+      </div>
+      </a>
+    </li>
+    <li class="moto">
+      <a href="https://www.geeparts.co/ducati/multistrada-950/" class="link_marca">
+        <img src="https://download.geeparts.co/enduro-950.png" alt="Multistrada 950">
+      <div class="info">
+        <p>Multistrada 950</p>
+      </div>
+      </a>
+    </li>
+    <li class="moto">
+      <a href="https://www.geeparts.co/ducati/multistrada-v2s-2025/" class="link_marca">
+        <img src="https://mayoristas.geeparts.co/wp-content/uploads/2025/06/Multistrada-v2s-2025.webp" alt="Multistrada v2s 2025">
+      <div class="info">
+        <p>Multistrada v2s 2025</p>
+      </div>
+      </a>
+    </li>
     </ul>
     </div>
   `
@@ -1378,7 +1395,10 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/yamaha/aerox-155/">Aerox 155</a>
           </li>
           <li class="new">
-            <a href="https://www.geeparts.co/yamaha/fz-3-0/">Fz 3.0</a>
+            <a href="https://www.geeparts.co/yamaha/fz-3-0/">Fz 3.0 sin actual</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/fz-3-0-2/">Fz 3.0 con actual</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/yamaha/aerox">Aerox</a>
@@ -1497,6 +1517,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             </li>
             <li class="new">
               <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-950/">Multistrada 950</a>
+            </li>
+            <li class="new">
+              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2s-2025/">Multistrada v2s 2025</a>
             </li>
         </ul>
       </li>
