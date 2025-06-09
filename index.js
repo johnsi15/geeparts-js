@@ -1273,7 +1273,10 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <a href="/suzuki">Suzuki</a>
         <ul class="menu_level_two">
           <li>
-            <a href="https://www.geeparts.co/suzuki/v-strom-1050xt/">V-strom 1050XT</a>
+            <a href="https://www.geeparts.co/suzuki/v-strom-160/">V-strom 160</a>
+          </li>
+          <li>
+           <a href="https://www.geeparts.co/suzuki/v-strom-250-sx/">V-strom 250 sx</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/v-strom-1000dl/">V-strom 1000DL</a>
@@ -1282,28 +1285,16 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/suzuki/v-strom-1000-abs-o-xt/">V-strom 1000 ABS o XT</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/suzuki/v-strom-650xt-at/">V-strom 650XT-AT</a>
+            <a href="https://www.geeparts.co/suzuki/v-strom-1050xt/">V-strom 1050XT</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/suzuki/v-strom-650dl/">V-strom 650DL</a>
+            <a href="https://www.geeparts.co/suzuki/v-strom-650xt-at/">V-strom 650XT-AT</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/v-strom-650abs/">V-strom 650ABS</a>
           </li>
-           <li>
-            <a href="https://www.geeparts.co/suzuki/v-strom-160/">V-strom 160</a>
-          </li>
-           <li>
-            <a href="https://www.geeparts.co/suzuki/v-strom-250-sx/">V-strom 250 sx</a>
-          </li>
           <li>
-            <a href="https://www.geeparts.co/suzuki/suzuki-dr650/">Suzuki DR650</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/suzuki/suzuki-drx200/">Suzuki DRX200</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/suzuki/suzuki-dr200/">Suzuki DR200</a>
+            <a href="https://www.geeparts.co/suzuki/v-strom-650dl/">V-strom 650DL</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/suzuki-dr150/">Suzuki DR150</a>
@@ -1311,32 +1302,41 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li class="new">
             <a href="https://www.geeparts.co/suzuki/suzuki-dr150-fi/">Suzuki DR150 FI</a>
           </li>
-           <li>
-            <a href="https://www.geeparts.co/suzuki/gsr-750/">GSR 750</a>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/suzuki-dr200/">Suzuki DR200</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/suzuki-drx200/">Suzuki DRX200</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/suzuki-dr650/">Suzuki DR650</a>
+          </li> 
+          <li>
+            <a href="https://www.geeparts.co/suzuki/gixxer-150/">Gixxer 150</a>
+          </li>   
+          <li>
+            <a href="https://www.geeparts.co/suzuki/gixxer-150-sf/">Gixxer 150 SF</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/gsxs-150/">GSXS-150</a>
-          </li>
+          </li>  
           <li>
             <a href="https://www.geeparts.co/suzuki/gixxer-250/">Gixxer 250</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/suzuki/gixxer-150/">Gixxer 150</a>
+            <a href="https://www.geeparts.co/suzuki/gixxer-250-sf/">Gixxer 250 SF</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/gsr-750/">GSR 750</a>
+          </li>
+          <li class="new">
+          <a href="https://www.geeparts.co/suzuki/ax4/">Suzuki AX4</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/gn-125/">GN 125</a>
           </li>
-           <li>
-            <a href="https://www.geeparts.co/suzuki/gixxer-150-sf/">Gixxer 150 SF</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/suzuki/gixxer-250-sf/">Gixxer 250 SF</a>
-          </li>
           <li class="new">
-            <a href="https://www.geeparts.co/suzuki/ax4/">Suzuki AX4</a>
-          </li>
-          <li class="new">
-            <a href="https://www.geeparts.co/suzuki/gsxs-1000/">Suzuki GSXS 1000</a>
+            <a href="https://www.geeparts.co/suzuki/gsxs-1000/">Suzuki GSX-S1000</a>
           </li>
         </ul>
       </li>
@@ -1344,25 +1344,40 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <a href="/yamaha">Yamaha</a>
         <ul class="menu_level_two">
           <li>
-            <a href="https://www.geeparts.co/yamaha/xt-660/">XT 660</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/yamaha/xtz-250/">XTZ 250</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/yamaha/xtz-250-modelo-anterior/">XTZ 250 modelo anterior</a>
+            <a href="https://www.geeparts.co/yamaha/xtz-125/">XTZ 125</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/xtz-150/">XTZ 150</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/yamaha/xtz-125/">XTZ 125</a>
+            <a href="https://www.geeparts.co/yamaha/xtz-250/">XTZ 250</a>
+          </li>          
+          <li>
+            <a href="https://www.geeparts.co/yamaha/xtz-250-modelo-anterior/">XTZ 250 modelo anterior</a>
           </li>
+          <li>
+            <a href="https://www.geeparts.co/yamaha/fz-2-0/">FZ 2.0</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/yamaha/fz-25/">FZ 25</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/fz-3-0/">Fz 3.0 sin actual</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/fz-3-0-2/">Fz 3.0 con actual</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/yamaha/xt-660/">XT 660</a>
+          </li>          
           <li>
             <a href="https://www.geeparts.co/yamaha/mt-03/">MT 03</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/mt-07/">MT 07</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/yamaha/mt-09-v2/">MT 09 V2</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/mt-09/">MT 09 V3</a>
@@ -1374,31 +1389,13 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/yamaha/mt-10/">MT 10</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/yamaha/fz-25/">FZ 25</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/yamaha/fz-2-0/">FZ 2.0</a>
-          </li>
-            <li>
-            <a href="https://www.geeparts.co/yamaha/xj6/">XJ6</a>
-          </li>
+            <a href="https://www.geeparts.co/yamaha/mt-15/">MT 15</a>
+          </li> 
           <li>
             <a href="https://www.geeparts.co/yamaha/n-max-connect/">N-MAX CONNECT</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/yamaha/mt-15/">MT 15</a>
-          </li>
-            <li>
-            <a href="https://www.geeparts.co/yamaha/mt-09-v2/">MT 09 V2</a>
-          </li>
-         <li>
             <a href="https://www.geeparts.co/yamaha/aerox-155/">Aerox 155</a>
-          </li>
-          <li class="new">
-            <a href="https://www.geeparts.co/yamaha/fz-3-0/">Fz 3.0 sin actual</a>
-          </li>
-          <li class="new">
-            <a href="https://www.geeparts.co/yamaha/fz-3-0-2/">Fz 3.0 con actual</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/yamaha/aerox">Aerox</a>
@@ -1407,10 +1404,13 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/yamaha/tracer-9-gt/">Tracer 9 GT</a>
           </li>
           <li class="new">
-            <a href="https://www.geeparts.co/yamaha/ycz-110/">YCZ 110</a>
+            <a href="https://www.geeparts.co/yamaha/libero/">Libero 125</a>
+          </li>  
+          <li>
+            <a href="https://www.geeparts.co/yamaha/xj6/">XJ6</a>
           </li>
           <li class="new">
-            <a href="https://www.geeparts.co/yamaha/libero/">Libero 125</a>
+            <a href="https://www.geeparts.co/yamaha/ycz-110/">YCZ 110</a>
           </li>
         </ul>
       </li>
