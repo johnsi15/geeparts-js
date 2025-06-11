@@ -1418,16 +1418,13 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <a href="/honda">Honda</a>
         <ul class="menu_level_two">
           <li>
+            <a href="https://www.geeparts.co/honda/xre-190/">XRE 190</a>
+          </li>
+          <li>
             <a href="https://www.geeparts.co/honda/xre-300/">XRE 300</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/honda/xr-190/">XR 190</a>
-          </li>
-          <li class="new">
-            <a href="https://www.geeparts.co/honda/xr-1902-0/">XR 190 2.0</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/honda/cb-500x/">CB 500X</a>
+            <a href="https://www.geeparts.co/honda/cb-160/">CB 160</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/honda/cb-190/">CB 190</a>
@@ -1436,19 +1433,22 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/honda/cb-190r-2-0/">CB 190R 2.0</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/honda/cb-160/">CB 160</a>
+            <a href="https://www.geeparts.co/honda/cb-300f/">CB 300F</a>
           </li>
-           <li>
+          <li>
+            <a href="https://www.geeparts.co/honda/cb-500x/">CB 500X</a>
+          </li>
+          <li>
             <a href="https://www.geeparts.co/honda/cb-1000/">CB 1000</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/honda/xblade/">Xblade</a>
-          </li>
-           <li>
             <a href="https://www.geeparts.co/honda/xr-150/">XR 150</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/honda/xre-190/">XRE 190</a>
+            <a href="https://www.geeparts.co/honda/xr-190/">XR 190</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/honda/xr-1902-0/">XR 190 2.0</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/honda/nx-190/">NX 190</a>
@@ -1456,11 +1456,11 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li class="new">
             <a href="https://www.geeparts.co/honda/nx-500/">NX 500</a>
           </li>
+          <li>
+            <a href="https://www.geeparts.co/honda/xblade/">Xblade</a>
+          </li>
           <li class="new">
             <a href="https://www.geeparts.co/honda/transalp-750/">Transalp 750</a>
-          </li>
-          <li>
-            <a href="https://www.geeparts.co/honda/cb-300f/">CB 300F</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/honda/africa-twin-crf-1100/">Africa Twin CRF 1100</a>
@@ -1474,25 +1474,25 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <a href="/bajaj">Bajaj</a>
         <ul class="menu_level_two">
           <li>
-            <a href="https://www.geeparts.co/bajaj/dominar-400/">Dominar 400</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/dominar-250/">Dominar 250</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-ns-200/">Pulsar NS 200</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-ns-160/">Pulsar NS 160</a>
+            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-p-150/">Pulsar P 150</a>
           </li>
           <li>
             <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-ns-150/">Pulsar NS 150</a>
           </li>
           <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-p-150/">Pulsar P 150</a>
+            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-ns-160/">Pulsar NS 160</a>
           </li>
           <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-ns-200/">Pulsar NS 200</a>
+          </li>          
+          <li>
             <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-n-250/">Pulsar N 250</a>
+          </li>
+          <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/dominar-250/">Dominar 250</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/bajaj/dominar-400/">Dominar 400</a>
           </li>
         </ul>
       </li>
@@ -1516,10 +1516,10 @@ if (window.matchMedia('(min-width: 768px)').matches) {
               <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2s/">Multistrada v2s</a>
             </li>
             <li class="new">
-              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-950/">Multistrada 950</a>
+              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2s-2025/">Multistrada v2s 2025</a>
             </li>
             <li class="new">
-              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2s-2025/">Multistrada v2s 2025</a>
+              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-950/">Multistrada 950</a>
             </li>
         </ul>
       </li>
@@ -1527,19 +1527,19 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <a href="/bmw">BMW</a>
         <ul class="menu_level_two">
           <li>
-            <a href="https://www.geeparts.co/bmw/f850gs/">F850GS</a>
+            <a href="https://www.geeparts.co/bmw/f750gs/">F750GS</a>
+          </li>
+           <li>
+            <a href="https://www.geeparts.co/bmw/f800gs/">F800gs</a>
           </li>
           <li>
-            <a href="https://www.geeparts.co/bmw/f750gs/">F750GS</a>
+            <a href="https://www.geeparts.co/bmw/f850gs/">F850GS</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/bmw/f900r/">F900R</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/bmw/f900xr/">F900XR</a>
-          </li>
-           <li>
-            <a href="https://www.geeparts.co/bmw/f800gs/">F800gs</a>
           </li>
            <li>
             <a href="https://www.geeparts.co/bmw/f-900gs-adventure/">F 900gs adventure</a>
@@ -1558,18 +1558,17 @@ if (window.matchMedia('(min-width: 768px)').matches) {
       <li>
         <a href="/ktm">KTM</a>
         <ul class="menu_level_two">
-
-          <li>
-            <a href="https://www.geeparts.co/ktm/duke-390/">Duke 390</a>
-          </li>
           <li>
             <a href="https://www.geeparts.co/ktm/duke-200/">Duke 200</a>
           </li>
-         <li>
-            <a href="https://www.geeparts.co/ktm/duke-390-g3/">Duke 390 g3</a>
-          </li>
           <li>
             <a href="https://www.geeparts.co/ktm/duke-200-g3/">Duke 200 g3</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/ktm/duke-390/">Duke 390</a>
+          </li>
+         <li>
+            <a href="https://www.geeparts.co/ktm/duke-390-g3/">Duke 390 g3</a>
           </li>
         </ul>
       </li>
@@ -1578,6 +1577,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <ul class="menu_level_two">
           <li>
             <a class="nav-list-link" href="https://www.geeparts.co/kawasaki/klr-650/">KLR 650</a>
+          </li>
+          <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/kawasaki/z900/">Z900</a>
           </li>
            <li>
             <a class="nav-list-link" href="https://www.geeparts.co/kawasaki/z1000/">Z1000</a>
@@ -1590,9 +1592,6 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
            <li>
             <a class="nav-list-link" href="https://www.geeparts.co/kawasaki/versys-x/">Versys X</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/kawasaki/z900/">Z900</a>
           </li>
         </ul>
       </li>
@@ -1634,6 +1633,12 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         <a href="/cf-moto">CF Moto</a>
         <ul class="menu_level_two">
           <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-250/">NK 250</a>
+          </li>
+          <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-300/">NK 300</a>
+          </li>
+          <li>
             <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-450/">NK 450</a>
           </li>
           <li>
@@ -1644,12 +1649,6 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li>
             <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/mt-450/">MT 450</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-250/">NK 250</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-300/">NK 300</a>
           </li>
         </ul>
       </li>
