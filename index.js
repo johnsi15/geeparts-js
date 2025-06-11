@@ -1362,10 +1362,10 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/yamaha/fz-25/">FZ 25</a>
           </li>
           <li class="new">
-            <a href="https://www.geeparts.co/yamaha/fz-3-0/">Fz 3.0 sin actual</a>
+            <a href="https://www.geeparts.co/yamaha/fz-3-0/">Fz 3.0 sin actualizaciones</a>
           </li>
           <li class="new">
-            <a href="https://www.geeparts.co/yamaha/fz-3-0-2/">Fz 3.0 con actual</a>
+            <a href="https://www.geeparts.co/yamaha/fz-3-0-2/">Fz 3.0 con actualizaciones</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/xt-660/">XT 660</a>
