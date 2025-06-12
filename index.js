@@ -1394,11 +1394,8 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li>
             <a href="https://www.geeparts.co/yamaha/n-max-connect/">N-MAX CONNECT</a>
           </li>
-          <li>
-            <a href="https://www.geeparts.co/yamaha/aerox-155/">Aerox 155</a>
-          </li>
           <li class="new">
-            <a href="https://www.geeparts.co/yamaha/aerox">Aerox</a>
+            <a href="https://www.geeparts.co/yamaha/aerox-155/">Aerox 155</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/yamaha/tracer-9-gt/">Tracer 9 GT</a>
