@@ -1687,6 +1687,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li><a href="/sliders">Sliders</a></li>
           <li><a href="/baul">Baúl</a></li>
           <li><a href="/caballetetrasero">Caballete trasero</a></li>      
+          <li><a href="/porta-placas">Porta placas</a></li>      
         </ul>
       </li>
     </ul>
