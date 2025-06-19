@@ -1622,6 +1622,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a class="nav-list-link" href="https://www.geeparts.co/hero/xpulse-200/">Xpulse 200</a>
           </li>
           <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/hero/xpulse-4v/">Xpulse 4v</a>
+          </li>
+          <li>
             <a class="nav-list-link" href="https://geeparts.co/hunk-160-R4V/">Hunk 160 R4V</a>
           </li>
         </ul>
