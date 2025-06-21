@@ -663,7 +663,15 @@ if (pathName === '/hero/' || pathName === '/hero') {
         </div>
         </a>
       </li>
-        <li class="moto">
+      <li class="moto">
+        <a href="https://www.geeparts.co/honda/cb-110/" class="link_marca">
+          <img src="https://download.geeparts.co/cb-110.webp" alt="CB 110">
+        <div class="info">
+          <p>CB 110</p>
+        </div>
+        </a>
+      </li>
+      <li class="moto">
         <a href="https://www.geeparts.co/honda/cb-190/" class="link_marca">
           <img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1663685101/multiparts-colombia/honda/CB190_s0ebf2.png" alt="CB 190">
         <div class="info">
@@ -1419,6 +1427,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li>
             <a href="https://www.geeparts.co/honda/xre-300/">XRE 300</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/honda/cb-110/">CB 110</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/honda/cb-160/">CB 160</a>
