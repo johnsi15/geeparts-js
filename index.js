@@ -874,6 +874,22 @@ if (pathName === '/hero/' || pathName === '/hero') {
         </div>
         </a>
       </li>
+      <li class="moto">
+        <a href="https://www.geeparts.co/ducati/multistrada-v2s/" class="link_marca">
+          <img src="https://mayoristas.geeparts.co/wp-content/uploads/2025/06/Multistrada-v2s-2025.webp" alt="Multistrada v2">
+        <div class="info">
+          <p>Multistrada v2s</p>
+        </div>
+        </a>
+      </li>
+      <li class="moto">
+        <a href="https://www.geeparts.co/ducati/multistrada-v2-y-v2s-2025/" class="link_marca">
+          <img src="https://mayoristas.geeparts.co/wp-content/uploads/2025/06/Multistrada-v2s-2025.webp" alt="Multistrada v2 y v2s 2025">
+        <div class="info">
+          <p>Multistrada v2 y v2s 2025</p>
+        </div>
+        </a>
+      </li>
         <li class="moto">
 		<a href="https://www.geeparts.co/ducati/hypermotard-950-sp/" class="link_marca">
 			<img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1666370479/multiparts-colombia/ducati/Hypermotard_lpmh04.png" alt="Hypermotard 950 sp">
@@ -895,14 +911,6 @@ if (pathName === '/hero/' || pathName === '/hero') {
         <img src="https://download.geeparts.co/enduro-950.png" alt="Multistrada 950">
       <div class="info">
         <p>Multistrada 950</p>
-      </div>
-      </a>
-    </li>
-    <li class="moto">
-      <a href="https://www.geeparts.co/ducati/multistrada-v2s-2025/" class="link_marca">
-        <img src="https://mayoristas.geeparts.co/wp-content/uploads/2025/06/Multistrada-v2s-2025.webp" alt="Multistrada v2s 2025">
-      <div class="info">
-        <p>Multistrada v2s 2025</p>
       </div>
       </a>
     </li>
