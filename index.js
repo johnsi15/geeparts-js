@@ -1514,17 +1514,20 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li>
             <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2/">Multistrada v2</a>
           </li>
+          <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2s/">Multistrada v2s</a>
+          </li>
+           <li class="new">
+              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2-y-v2s-2025/">Multistrada v2 y v2s 2025</a>
+            </li>
+            <li class="new">
+              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-950/">Multistrada 950</a>
+            </li>
             <li>
                 <a class="nav-list-link" href="https://www.geeparts.co/ducati/hypermotard-950-sp/">Hypermotard 950 sp</a>
             </li>
             <li class="new">
                 <a class="nav-list-link" href="https://www.geeparts.co/ducati/hypermotard-950/">Hypermotard 950</a>
-            </li>
-           <li>
-              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-v2s/">Multistrada v2 y v2s 2025</a>
-            </li>
-            <li class="new">
-              <a class="nav-list-link" href="https://www.geeparts.co/ducati/multistrada-950/">Multistrada 950</a>
             </li>
         </ul>
       </li>
