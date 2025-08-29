@@ -1877,7 +1877,6 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li><a href="/caballetetrasero">Caballete trasero</a></li>      
           <li><a href="/porta-placas">Porta placas</a></li>      
           <li><a href="/corta-vientos">Corta vientos</a></li>
-          <li><a href="/royal-enfield">Royal Enfield</a></li>
           <li>
             <a href="/royal-enfield">Royal Enfield</a>
             <ul class="menu_level_three">
