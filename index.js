@@ -1360,6 +1360,31 @@ if (pathName === '/hero/' || pathName === '/hero') {
     </ul>
     </div>
   `
+} else if (pathName === '/sym/' || pathName === '/sym') {
+  const categoryBody = document.querySelector('.category-body  .container-fluid .js-product-table')
+  if (categoryBody) {
+    categoryBody.style.display = 'none'
+  }
+  document.querySelectorAll('#nav-filters #filters .col-12').forEach((el, index) => {
+    if (index > 0) el.style.display = 'none'
+  })
+  const categoryConstrols = document.querySelector('.category-controls .form-group')
+  if (categoryConstrols) categoryConstrols.style.display = 'none'
+
+  document.querySelector('.category-body  .container-fluid').innerHTML = `
+     <div class="container_motos_modelos">
+      <ul class="kawasaki_section">
+      <li class="moto">
+        <a href="https://www.geeparts.co/sym/adxtg-150" class="link_marca">
+          <img src="https://download.geeparts.co/SYM-ADXTG-150.webp" alt="Adxtg 150">
+        <div class="info">
+          <p>Adxtg 150</p>
+        </div>
+        </a>
+      </li>
+    </ul>
+    </div>
+  `
 }
 
 const categorysContent = document.querySelector('.category-body .container-fluid')
@@ -1765,10 +1790,10 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         </ul>
       </li>
        <li>
-        <a href="/royal-enfield">Royal Enfield</a>
+        <a href="/sym">SYM</a>
         <ul class="menu_level_two">
           <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/royal-enfield/himalayan/">Himalayan</a>
+            <a class="nav-list-link" href="https://www.geeparts.co/sym/adxtg-150/">Adxtg 150</a>
           </li>
         </ul>
       </li>
@@ -1843,7 +1868,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
         </ul>
        </li>
-      <li>
+      <li class="universales">
         <a href="#">Universales</a>
         <ul class="menu_level_two">
           <li><a href="/manubrios">Manubrios</a></li> 
@@ -1851,12 +1876,22 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li><a href="/baul">Baúl</a></li>
           <li><a href="/caballetetrasero">Caballete trasero</a></li>      
           <li><a href="/porta-placas">Porta placas</a></li>      
-          <li><a href="/corta-vientos">Corta vientos</a></li>      
+          <li><a href="/corta-vientos">Corta vientos</a></li>
+          <li><a href="/royal-enfield">Royal Enfield</a></li>
+          <li>
+            <a href="/royal-enfield">Royal Enfield</a>
+            <ul class="menu_level_three">
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/royal-enfield/himalayan/">Himalayan</a>
+              </li>
+            </ul>
+          </li> 
         </ul>
       </li>
     </ul>
   </nav>
 `
+  // .universales -> .menu_level_two ->  overflow: initial; -> .menu_level_three -> left: -98px; top: 0;
 
   if (carritoCompras) {
     document.querySelector('.car_search_user .carrito').appendChild(carritoComprasClone)
