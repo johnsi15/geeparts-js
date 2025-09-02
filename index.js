@@ -21,7 +21,7 @@ function createSocialBar() {
     link.target = '_blank'
 
     link.innerHTML =
-      '<img src="' + network.image + '" alt="' + network.name + '" width="40" height="40" loading="lazy">'
+      '<img src="' + network.image + '" alt="' + network.name + '" width="50" height="50" loading="lazy">'
     socialBar.appendChild(link)
   })
 
