@@ -3,6 +3,11 @@ function createSocialBar() {
   socialBar.className = 'social-bar'
   const socialNetworks = [
     {
+      name: 'whatsapp',
+      url: 'https://wa.me/573043538612?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
+      image: 'https://download.geeparts.co/whatsapp-web.png',
+    },
+    {
       name: 'sistecredito',
       url: 'https://wa.me/573043538612?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/sistecredito-web.png',
