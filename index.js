@@ -1799,3 +1799,39 @@ if (window.matchMedia('(min-width: 768px)').matches) {
     }
   }
 }
+
+const footer = document.querySelector('.js-footer')
+
+if (footer) {
+  const container = footer.querySelector('.container')
+  const firstElementFooter = container.querySelector('.element-footer')
+
+  if (firstElementFooter) {
+    const blockInfo = document.createElement('div')
+    blockInfo.classList.add('block_info')
+
+    blockInfo.innerHTML = `
+      <div class="block-container">
+        <a href="https://www.google.com/maps/dir//Av.+2+%238-69,+San+Luis,+C%C3%BAcuta,+Norte+de+Santander/@7.8965953,-72.565511,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e6645cb74f474a9:0x5dbca0ce3ba3a0af!2m2!1d-72.4830683!2d7.8965923?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+          <div class="element">
+            <img src="https://download.geeparts.co/tienda-fisica.png" alt="Tienda física" class="logo">
+            <span class="text">Visita nuestra tienda física</span>
+          </div>
+        </a>
+        <a href="https://mayoristas.geeparts.co/registro-nuevo/" target="_blank" rel="noopener">
+          <div class="element">
+            <img src="https://download.geeparts.co/mayoristas.png" alt="Mayoristas" class="logo">
+            <span class="text">Haz parte de nuestros mayoristas</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="element">
+            <img src="https://download.geeparts.co/distribuidores.png" alt="Distribuidores" class="logo">
+            <span class="text">Conoce nuestros distribuidores</span>
+          </div>
+        </a>
+      </div>
+      `
+    container.insertBefore(blockInfo, firstElementFooter)
+  }
+}
