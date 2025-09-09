@@ -1670,14 +1670,6 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         </ul>
       </li>
        <li>
-        <a href="/sym">SYM</a>
-        <ul class="menu_level_two">
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/sym/adxtg-150/">Adxtg 150</a>
-          </li>
-        </ul>
-      </li>
-       <li>
         <a href="/hero">Hero</a>
         <ul class="menu_level_two">
           <li>
@@ -1691,7 +1683,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
         </ul>
       </li>
-<li>
+      <li>
         <a href="/cf-moto">CF Moto</a>
         <ul class="menu_level_two">
           <li>
@@ -1748,6 +1740,35 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
         </ul>
        </li>
+       <li class="otras">
+        <a href="#">otras</a>
+        <ul class="menu_level_two">
+          <li>
+            <a href="/sym">SYM</a>
+            <ul class="menu_level_three">
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/sym/adxtg-150/">Adxtg 150</a>
+              </li>
+            </ul>
+          </li> 
+          <li>
+            <a href="/akt">AKT</a>
+            <ul class="menu_level_three">
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/akt/voge-300-ds/">Voge 300 DS</a>
+              </li>
+            </ul>
+          </li> 
+          <li>
+            <a href="/royal-enfield">Royal Enfield</a>
+            <ul class="menu_level_three">
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/royal-enfield/himalayan/">Himalayan</a>
+              </li>
+            </ul>
+          </li> 
+        </ul>
+      </li>
       <li class="universales">
         <a href="#">Universales</a>
         <ul class="menu_level_two">
@@ -1757,14 +1778,6 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li><a href="/caballetetrasero">Caballete trasero</a></li>      
           <li><a href="/porta-placas">Porta placas</a></li>      
           <li><a href="/corta-vientos">Corta vientos</a></li>
-          <li>
-            <a href="/royal-enfield">Royal Enfield</a>
-            <ul class="menu_level_three">
-              <li>
-                <a class="nav-list-link" href="https://www.geeparts.co/royal-enfield/himalayan/">Himalayan</a>
-              </li>
-            </ul>
-          </li> 
         </ul>
       </li>
     </ul>
