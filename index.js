@@ -1265,6 +1265,31 @@ if (pathName === '/hero/' || pathName === '/hero') {
     </ul>
     </div>
   `
+} else if (pathName === '/akt/' || pathName === '/akt') {
+  const categoryBody = document.querySelector('.category-body  .container-fluid .js-product-table')
+  if (categoryBody) {
+    categoryBody.style.display = 'none'
+  }
+  document.querySelectorAll('#nav-filters #filters .col-12').forEach((el, index) => {
+    if (index > 0) el.style.display = 'none'
+  })
+  const categoryConstrols = document.querySelector('.category-controls .form-group')
+  if (categoryConstrols) categoryConstrols.style.display = 'none'
+
+  document.querySelector('.category-body  .container-fluid').innerHTML = `
+     <div class="container_motos_modelos">
+      <ul class="kawasaki_section">
+      <li class="moto">
+        <a href="https://www.geeparts.co/akt/voge-300-ds" class="link_marca">
+          <img src="https://download.geeparts.co/voge-300-ds.webp" alt="Voge 300 DS">
+        <div class="info">
+          <p>Voge 300 DS</p>
+        </div>
+        </a>
+      </li>
+    </ul>
+    </div>
+  `
 }
 
 const categorysContent = document.querySelector('.category-body .container-fluid')
@@ -1741,7 +1766,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         </ul>
        </li>
        <li class="otras">
-        <a href="#">otras</a>
+        <a href="#">Otras</a>
         <ul class="menu_level_two">
           <li>
             <a href="/sym">SYM</a>
