@@ -406,6 +406,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</div>
 		</a>
 	</li>
+  <li class="moto">
+		<a href="https://www.geeparts.co/suzuki/gsx-125-r/" class="link_marca">
+			<img src="https://download.geeparts.co/GSX-125.webp" alt="GSX 125 R">
+		<div class="info">
+			<p>Suzuki GSX 125 R</p>
+		</div>
+		</a>
+	</li>
 </ul>
 </div>
   `
@@ -1395,6 +1403,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li>
             <a href="https://www.geeparts.co/suzuki/gixxer-150-sf/">Gixxer 150 SF</a>
           </li>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/gsx-125-r/">GSX 125 R</a>
+          </li>  
           <li>
             <a href="https://www.geeparts.co/suzuki/gsxs-150/">GSXS-150</a>
           </li>  
