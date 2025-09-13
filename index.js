@@ -734,9 +734,9 @@ if (pathName === '/hero/' || pathName === '/hero') {
     </li>
     <li class="moto">
       <a href="https://www.geeparts.co/honda/xr-300l/" class="link_marca">
-        <img src="https://download.geeparts.co/xr-300l.webp" alt="XR 300L">
+        <img src="https://download.geeparts.co/xr-300l.webp" alt="XR 300L Tornado">
       <div class="info">
-        <p>XR 300L</p>
+        <p>XR 300L Tornado</p>
       </div>
       </a>
     </li>
@@ -1543,7 +1543,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/honda/xr-1902-0/">XR 190 2.0</a>
           </li>
           <li class="new">
-            <a href="https://www.geeparts.co/honda/xr-300l/">XR 300L</a>
+            <a href="https://www.geeparts.co/honda/xr-300l/">XR 300L Tornado</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/honda/nx-190/">NX 190</a>
