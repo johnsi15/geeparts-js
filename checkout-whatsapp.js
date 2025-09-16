@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
     return
   }
 
-  // Función para abrir WhatsApp (simplificada con wa.me)
+  // Función mejorada para abrir WhatsApp con múltiples métodos
   function abrirWhatsApp(numero, mensaje) {
     // Limpiar el número (quitar + si existe, wa.me lo maneja automáticamente)
     var numeroLimpio = numero.replace(/\+/g, '')
@@ -20,8 +20,40 @@ jQuery(document).ready(function ($) {
 
     console.log('Abriendo WhatsApp con URL:', urlWhatsApp)
 
-    // Abrir WhatsApp - wa.me maneja automáticamente app vs web
-    window.open(urlWhatsApp, '_blank')
+    // MÉTODO 1: Intentar abrir en la misma ventana primero (más confiable)
+    try {
+      window.location.href = urlWhatsApp
+      return true
+    } catch (e) {
+      console.log('Método 1 falló, intentando método 2')
+    }
+
+    // MÉTODO 2: Usar window.open como fallback
+    try {
+      var ventana = window.open(urlWhatsApp, '_blank')
+      if (ventana) {
+        return true
+      } else {
+        console.log('Window.open bloqueado, intentando método 3')
+      }
+    } catch (e) {
+      console.log('Método 2 falló, intentando método 3')
+    }
+
+    // MÉTODO 3: Crear un enlace temporal y hacer click
+    try {
+      var enlace = document.createElement('a')
+      enlace.href = urlWhatsApp
+      enlace.target = '_blank'
+      enlace.rel = 'noopener noreferrer'
+      document.body.appendChild(enlace)
+      enlace.click()
+      document.body.removeChild(enlace)
+      return true
+    } catch (e) {
+      console.error('Todos los métodos fallaron:', e)
+      return false
+    }
   }
 
   // Manejador de eventos de click
@@ -121,21 +153,32 @@ jQuery(document).ready(function ($) {
         console.log('Respuesta del servidor:', respuesta)
 
         if (respuesta.success) {
-          // Usar wa.me para máxima compatibilidad
-          abrirWhatsApp(respuesta.data.numero_whatsapp, respuesta.data.mensaje_whatsapp)
+          // Intentar abrir WhatsApp con múltiples métodos
+          var whatsappAbierto = abrirWhatsApp(respuesta.data.numero_whatsapp, respuesta.data.mensaje_whatsapp)
 
+          if (!whatsappAbierto) {
+            // Si falla todo, mostrar la URL para copiar
+            var urlCompleta =
+              'https://wa.me/' +
+              respuesta.data.numero_whatsapp.replace(/\+/g, '') +
+              '?text=' +
+              respuesta.data.mensaje_whatsapp
+            alert('No se pudo abrir WhatsApp automáticamente. Copia esta URL en tu navegador:\n\n' + urlCompleta)
+          }
+
+          // Retrasar el redirect para dar tiempo a WhatsApp
           setTimeout(function () {
             window.location.href = '/mi-cuenta/orders/'
-          }, 1500)
+          }, 2500) // Aumenté el tiempo a 2.5 segundos
         } else {
           console.error('Error al crear pedido')
-          alert('Error al crear el pedido')
+          alert('Error al crear el pedido: ' + (respuesta.data?.message || 'Error desconocido'))
         }
       },
       error: function (xhr, status, error) {
         console.error('Error en la solicitud AJAX:', status, error)
         console.error('Detalles del error:', xhr.responseText)
-        alert('Error al procesar la solicitud')
+        alert('Error al procesar la solicitud: ' + error)
       },
       complete: function () {
         console.log('Proceso AJAX completado')
@@ -143,4 +186,13 @@ jQuery(document).ready(function ($) {
       },
     })
   })
+
+  // ALTERNATIVA: Función para probar directamente la apertura de WhatsApp
+  window.testWhatsApp = function () {
+    var numero = '573043538612'
+    var mensaje = encodeURIComponent('Hola, esto es una prueba')
+    abrirWhatsApp(numero, mensaje)
+  }
+
+  console.log('Para probar WhatsApp directamente, ejecuta: testWhatsApp() en la consola')
 })
