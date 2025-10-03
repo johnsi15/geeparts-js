@@ -1,2 +1,10 @@
 README.md
 checkout-whatsapp.js
+node_modules/
+.git/
+.gitignore
+newsletter/
+build.js
+*.log
+.DS_Store
+.vscode/
