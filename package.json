@@ -4,19 +4,32 @@
   "description": "Code main page Geeparts",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Hello world'"
+    "test": "echo 'Hello world'",
+    "build": "node build.js"
   },
+  "files": [
+    "dist/",
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnsi15/geeparts-js.git"
   },
   "keywords": [
-    "geeparts"
+    "geeparts",
+    "newsletter",
+    "modal",
+    "widget",
+    "subscription",
+    "brevo"
   ],
   "author": "John Serrano",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johnsi15/geeparts-js/issues"
   },
-  "homepage": "https://github.com/johnsi15/geeparts-js#readme"
+  "homepage": "https://github.com/johnsi15/geeparts-js#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.10"
+  }
 }
