@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Modal - Brevo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+
+        <!-- Contenido inicial: Formulario -->
+        <div class="modal-content" id="formContent">
+          <h2 class="modal-title">15% de descuento para la primera compra</h2>
+          <p class="modal-description">
+            Suscríbete a nuestro newsletter y recibe un 15% de descuento en toda la tienda en tu primera compra.
+          </p>
+
+          <form id="newsletterForm">
+            <div class="form-group">
+              <input type="email" class="email-input" id="emailInput" placeholder="tu@email.com" required />
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">15% de descuento</button>
+            <div class="error-message" id="errorMessage"></div>
+          </form>
+        </div>
+
+        <!-- Contenido de éxito -->
+        <div class="success-content" id="successContent">
+          <h2 class="modal-title">¡Gracias por unirte!</h2>
+          <p class="modal-description">
+            Ya puedes usar el cupón de 15% en tu primera compra. Esperamos que lo disfrutes.
+          </p>
+
+          <div class="coupon-box">
+            <span class="coupon-code" id="couponCode">WELCOME15</span>
+            <button class="copy-btn" onclick="copyCoupon()" id="copyBtn">📋</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
