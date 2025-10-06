@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --main-color: #e6c626;
+  --secondary-color: #a08604;
 }
 
 .demo-btn {
@@ -9,7 +11,7 @@
   font-size: 16px;
   font-weight: 600;
   background: white;
-  color: #667eea;
+  color: var(--main-color);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -128,7 +130,7 @@
 }
 
 .email-input:focus {
-  border-color: #667eea;
+  border-color: var(--main-color);
 }
 
 .submit-btn {
@@ -136,7 +138,7 @@
   padding: 15px;
   font-size: 16px;
   font-weight: 600;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--main-color) 0%, var(--secondary-color) 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -164,7 +166,7 @@
 
 .coupon-box {
   background: #f8f9fa;
-  border: 2px dashed #667eea;
+  border: 2px dashed var(--main-color);
   border-radius: 8px;
   padding: 20px;
   margin-top: 25px;
@@ -176,12 +178,12 @@
 .coupon-code {
   font-size: 24px;
   font-weight: 700;
-  color: #667eea;
+  color: var(--secondary-color);
   letter-spacing: 2px;
 }
 
 .copy-btn {
-  background: #667eea;
+  background: var(--main-color);
   color: white;
   border: none;
   width: 40px;
