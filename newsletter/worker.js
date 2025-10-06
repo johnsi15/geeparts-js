@@ -21,10 +21,8 @@ export default {
     }
 
     try {
-      // Leer body del request
       const { email, listId } = await request.json()
 
-      // Validar email
       if (!email || !email.includes('@')) {
         return new Response(JSON.stringify({ error: 'Email inválido' }), {
           status: 400,
@@ -32,12 +30,11 @@ export default {
         })
       }
 
-      // Llamar a Brevo API
       const brevoResponse = await fetch('https://api.brevo.com/v3/contacts', {
         method: 'POST',
         headers: {
           accept: 'application/json',
-          'api-key': env.BREVO_API_KEY, // Variable de entorno
+          'api-key': env.BREVO_API_KEY,
           'content-type': 'application/json',
         },
         body: JSON.stringify({
@@ -49,7 +46,6 @@ export default {
 
       const data = await brevoResponse.json()
 
-      // Retornar respuesta
       return new Response(JSON.stringify(data), {
         status: brevoResponse.status,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
