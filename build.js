@@ -23,7 +23,6 @@ async function build() {
       'use strict';
       
       const CSS = \`${css.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`;
-
       const HTML = \`${modalContent.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`;
 
       if (!document.getElementById('geeparts-newsletter-styles')) {
@@ -34,28 +33,23 @@ async function build() {
       }
 
       function init() {
-        // Inyectar HTML
         if (!document.getElementById('modalOverlay')) {
           document.body.insertAdjacentHTML('beforeend', HTML);
         }
 
-        // JavaScript del widget
         ${js}
 
-        // Exponer funciones globalmente para que funcionen los onclick del HTML
         window.openModal = openModal;
         window.closeModal = closeModal;
         window.copyCoupon = copyCoupon;
-
-        // Abrir modal automáticamente después de 3 segundos
-        setTimeout(() => {
-          if (!localStorage.getItem('newsletterSubmitted')) {
-            openModal();
-          }
-        }, 3000);
+        
+        window.geepartsNewsletter = {
+          config: config,
+          openModal: openModal,
+          closeModal: closeModal,
+        };
       }
 
-      // Ejecutar cuando el DOM esté listo
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
       } else {

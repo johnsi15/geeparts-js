@@ -1,9 +1,23 @@
 // ============================================
+// CONFIGURACIÓN DEL WIDGET
+// ============================================
+const defaultConfig = {
+  autoOpen: true,
+  autoOpenDelay: 3000,
+  couponCode: 'WELCOME15',
+  apiKey: 'TU_API_KEY_AQUI',
+  listId: 2,
+}
+
+// Merge con configuración del usuario
+const config = Object.assign({}, defaultConfig, window.geepartsNewsletterConfig || {})
+
+// ============================================
 // CONFIGURACIÓN DE BREVO
 // ============================================
 const BREVO_CONFIG = {
-  apiKey: 'TU_API_KEY_AQUI', // Reemplaza con tu API key de Brevo
-  listId: 2, // Reemplaza con el ID de tu lista en Brevo
+  apiKey: config.apiKey,
+  listId: config.listId,
   apiUrl: 'https://api.brevo.com/v3/contacts',
 }
 
@@ -117,7 +131,6 @@ document.getElementById('newsletterForm').addEventListener('submit', async funct
   // Deshabilitar botón y mostrar loading
   submitBtn.disabled = true
   submitBtn.innerHTML = '<span class="loading"></span>'
-  errorMessage.classList.remove('active')
 
   try {
     // Agregar contacto a Brevo
@@ -125,6 +138,7 @@ document.getElementById('newsletterForm').addEventListener('submit', async funct
 
     // Mostrar mensaje de éxito
     showSuccess()
+    localStorage.setItem('newsletterSubmitted', 'true')
   } catch (error) {
     console.error('Error:', error)
     showError('Hubo un error al procesar tu suscripción. Por favor, intenta de nuevo.')
@@ -142,12 +156,27 @@ function showError(message) {
   const errorMessage = document.getElementById('errorMessage')
   errorMessage.textContent = message
   errorMessage.classList.add('active')
+
+  setTimeout(() => {
+    errorMessage.classList.remove('active')
+  }, 3000)
 }
 
 function showSuccess() {
+  const couponElement = document.getElementById('couponCode')
+  if (couponElement && config.couponCode) {
+    couponElement.textContent = config.couponCode
+  }
+
   document.getElementById('formContent').style.display = 'none'
   document.getElementById('successContent').classList.add('active')
 }
 
-// Abrir modal automáticamente después de 3 segundos (opcional)
-// setTimeout(openModal, 3000);
+// ============================================
+// AUTO-ABRIR MODAL
+// ============================================
+if (config.autoOpen && !localStorage.getItem('newsletterSubmitted')) {
+  setTimeout(() => {
+    openModal()
+  }, config.autoOpenDelay)
+}
