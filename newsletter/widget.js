@@ -6,7 +6,7 @@ const defaultConfig = {
   autoOpenDelay: 3000,
   couponCode: 'WELCOME15',
   apiKey: 'TU_API_KEY_AQUI',
-  listId: 2,
+  listId: 12,
 }
 
 // Merge con configuración del usuario
@@ -73,42 +73,30 @@ function copyCoupon() {
 // INTEGRACIÓN CON BREVO
 // ============================================
 async function addContactToBrevo(email) {
-  // IMPORTANTE: Esta llamada directa a Brevo API causará error CORS
-  // Para producción, debes usar una de estas opciones:
-  // 1. Un backend (PHP, Node.js, Python) que haga la llamada
-  // 2. Un serverless function (Vercel, Netlify Functions, etc.)
-  // 3. El formulario nativo de Brevo embebido
+  const WORKER_URL = 'https://shy-fire-438e.jandreys15.workers.dev' // 👈 Cambia esto
 
-  // Opción para DESARROLLO/TESTING: Simular la llamada
-  const USE_DEMO_MODE = true // Cambia a false cuando tengas backend
+  try {
+    const response = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: email,
+        listId: BREVO_CONFIG.listId,
+      }),
+    })
 
-  if (USE_DEMO_MODE) {
-    // Simula una petición exitosa para testing
-    console.log('📧 Email a suscribir:', email)
-    console.log('📋 Lista ID:', BREVO_CONFIG.listId)
-    await new Promise(resolve => setTimeout(resolve, 1500)) // Simula delay
-    return { id: 'demo-' + Date.now() }
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.error || 'Error al suscribir')
+    }
+
+    return await response.json()
+  } catch (error) {
+    console.error('Error al suscribir:', error)
+    throw error
   }
-
-  // Código real para cuando tengas un backend
-  // Reemplaza '/api/subscribe' con tu endpoint backend
-  const response = await fetch('/api/subscribe', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      email: email,
-      listId: BREVO_CONFIG.listId,
-    }),
-  })
-
-  if (!response.ok) {
-    const error = await response.json()
-    throw new Error(error.message || 'Error al suscribir')
-  }
-
-  return await response.json()
 }
 
 // ============================================
