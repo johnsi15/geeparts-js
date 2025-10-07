@@ -4,8 +4,7 @@
 const defaultConfig = {
   autoOpen: true,
   autoOpenDelay: 3000,
-  couponCode: 'WELCOME15',
-  apiKey: 'TU_API_KEY_AQUI',
+  couponCode: 'WELCOME5',
   listId: 12,
 }
 
@@ -16,7 +15,6 @@ const config = Object.assign({}, defaultConfig, window.geepartsNewsletterConfig 
 // CONFIGURACIÓN DE BREVO
 // ============================================
 const BREVO_CONFIG = {
-  apiKey: config.apiKey,
   listId: config.listId,
   apiUrl: 'https://api.brevo.com/v3/contacts',
 }
@@ -73,7 +71,7 @@ function copyCoupon() {
 // INTEGRACIÓN CON BREVO
 // ============================================
 async function addContactToBrevo(email) {
-  const WORKER_URL = 'https://shy-fire-438e.jandreys15.workers.dev' // 👈 Cambia esto
+  const WORKER_URL = 'https://shy-fire-438e.jandreys15.workers.dev'
 
   try {
     const response = await fetch(WORKER_URL, {
