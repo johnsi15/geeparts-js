@@ -7,12 +7,10 @@ export default {
       'Access-Control-Allow-Headers': 'Content-Type',
     }
 
-    // Manejar preflight OPTIONS
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: corsHeaders })
     }
 
-    // Solo permitir POST
     if (request.method !== 'POST') {
       return new Response(JSON.stringify({ error: 'Method not allowed' }), {
         status: 405,
