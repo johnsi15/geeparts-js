@@ -85,12 +85,13 @@ async function addContactToBrevo(email) {
       }),
     })
 
+    const data = await response.json()
+
     if (!response.ok) {
-      const error = await response.json()
-      throw new Error(error.error || 'Error al suscribir')
+      throw new Error(data.error || 'Error al suscribir')
     }
 
-    return await response.json()
+    return data
   } catch (error) {
     console.error('Error al suscribir:', error)
     throw error
@@ -105,10 +106,9 @@ document.getElementById('newsletterForm').addEventListener('submit', async funct
 
   const emailInput = document.getElementById('emailInput')
   const submitBtn = document.getElementById('submitBtn')
-  const errorMessage = document.getElementById('errorMessage')
+  // const errorMessage = document.getElementById('errorMessage')
   const email = emailInput.value.trim()
 
-  // Validar email
   if (!email || !isValidEmail(email)) {
     showError('Por favor, ingresa un email válido')
     return
@@ -119,17 +119,27 @@ document.getElementById('newsletterForm').addEventListener('submit', async funct
   submitBtn.innerHTML = '<span class="loading"></span>'
 
   try {
-    // Agregar contacto a Brevo
-    await addContactToBrevo(email)
+    const result = await addContactToBrevo(email)
 
-    // Mostrar mensaje de éxito
-    showSuccess()
+    const { message, success, duplicate } = result
+
+    if (!success) {
+      throw new Error(result.message || 'Error al suscribir')
+    }
+
+    if (duplicate) {
+      showSuccess({ message, duplicate })
+      localStorage.setItem('newsletterSubmitted', 'true')
+      return
+    }
+
+    showSuccess({ message })
     localStorage.setItem('newsletterSubmitted', 'true')
   } catch (error) {
     console.error('Error:', error)
     showError('Hubo un error al procesar tu suscripción. Por favor, intenta de nuevo.')
     submitBtn.disabled = false
-    submitBtn.textContent = '15% de descuento'
+    submitBtn.textContent = '5% de descuento'
   }
 })
 
@@ -148,10 +158,28 @@ function showError(message) {
   }, 3000)
 }
 
-function showSuccess() {
+function showSuccess({ message, duplicate = false }) {
   const couponElement = document.getElementById('couponCode')
-  if (couponElement && config.couponCode) {
-    couponElement.textContent = config.couponCode
+  const couponBox = document.querySelector('.coupon-box')
+  const successTitle = document.querySelector('#successContent .modal-title')
+
+  if (duplicate) {
+    const successTitle = document.querySelector('#successContent .modal-title')
+    if (successTitle) {
+      successTitle.textContent = message
+    }
+
+    if (couponBox) {
+      couponBox.style.display = 'none'
+    }
+  } else {
+    if (couponElement && config.couponCode) {
+      couponElement.textContent = config.couponCode
+    }
+
+    if (message && successTitle) {
+      successTitle.textContent = message
+    }
   }
 
   document.getElementById('formContent').style.display = 'none'
