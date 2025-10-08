@@ -13,7 +13,7 @@ async function build() {
     const html = fs.readFileSync('newsletter/index.html', 'utf8')
 
     // Extraer solo el contenido del modal del HTML (sin el <!DOCTYPE>, <html>, <head>, etc.)
-    const modalContent = html.match(/<div class="modal-overlay"[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/)?.[0] || ''
+    const modalContent = html.match(/<div[^>]*id="modalOverlay"[\s\S]*?<\/div>\s*<\/div>/)?.[0] || ''
 
     const js = fs.readFileSync('newsletter/widget.js', 'utf8')
 
