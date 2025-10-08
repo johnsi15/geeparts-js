@@ -1,6 +1,5 @@
 export default {
   async fetch(request, env) {
-    // CORS headers
     const corsHeaders = {
       'Access-Control-Allow-Origin': '*', // Cambia '*' por tu dominio en producción
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
@@ -12,7 +11,7 @@ export default {
     }
 
     if (request.method !== 'POST') {
-      return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+      return new Response(JSON.stringify({ message: 'Method not allowed', success: false }), {
         status: 405,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       })
@@ -22,7 +21,7 @@ export default {
       const { email, listId } = await request.json()
 
       if (!email || !email.includes('@')) {
-        return new Response(JSON.stringify({ error: 'Email inválido' }), {
+        return new Response(JSON.stringify({ message: 'Email inválido', success: false }), {
           status: 400,
           headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         })
@@ -37,17 +36,46 @@ export default {
         },
         body: JSON.stringify({
           email: email,
-          listIds: [listId || 12],
-          updateEnabled: true,
+          listIds: [listId || 2],
+          updateEnabled: false,
         }),
       })
 
       const data = await brevoResponse.json()
 
-      return new Response(JSON.stringify(data), {
-        status: brevoResponse.status,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-      })
+      if (!brevoResponse.ok) {
+        if (data.code === 'duplicate_parameter') {
+          return new Response(
+            JSON.stringify({
+              message: '¡Ya estás suscrito a nuestro newsletter!',
+              success: true,
+              duplicate: true,
+            }),
+            {
+              status: 200,
+              headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+            }
+          )
+        }
+
+        return new Response(JSON.stringify(data), {
+          status: brevoResponse.status,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        })
+      }
+
+      return new Response(
+        JSON.stringify({
+          message: 'Suscripción exitosa',
+          success: true,
+          duplicate: false,
+          data: data,
+        }),
+        {
+          status: 200,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        }
+      )
     } catch (error) {
       return new Response(
         JSON.stringify({
