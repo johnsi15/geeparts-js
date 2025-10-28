@@ -1811,7 +1811,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li>
             <a href="/bera">Bera</a>
-            <ul class="menu_level_two">
+            <ul class="menu_level_three">
               <li class="new">
                 <a class="nav-list-link" href="https://www.geeparts.co/bera/kavak/">Kavak</a>
               </li>
