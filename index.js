@@ -1757,12 +1757,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         </ul>
       </li>
       <li>
-        <a href="/bera">Bera</a>
-        <ul class="menu_level_two">
-          <li class="new">
-            <a class="nav-list-link" href="https://www.geeparts.co/bera/kavak/">Kavak</a>
-          </li>
-        </ul>
+        <a href="/slider-de-granada">Slider Nuevos</a>
       </li>
       <li>
         <a href="/maletas/">Maletas</a>
@@ -1813,7 +1808,15 @@ if (window.matchMedia('(min-width: 768px)').matches) {
                 <a class="nav-list-link" href="https://www.geeparts.co/royal-enfield/himalayan/">Himalayan</a>
               </li>
             </ul>
-          </li> 
+          </li>
+          <li>
+            <a href="/bera">Bera</a>
+            <ul class="menu_level_two">
+              <li class="new">
+                <a class="nav-list-link" href="https://www.geeparts.co/bera/kavak/">Kavak</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li class="universales">
