@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.insertAdjacentHTML('beforeend', html)
 
   const modalOverlay = document.getElementById('modalBlackfridayOverlay')
-  const modalImage = document.getElementById('modalImage')
+  // const modalImage = document.getElementById('modalImage')
   const closeBtn = document.getElementById('closeBtn')
 
   function closeModal() {
