@@ -1863,6 +1863,74 @@ if (window.matchMedia('(min-width: 768px)').matches) {
   }
 }
 
+const sliderContainer = document.querySelector(
+  '.js-home-slider .swiper-slide.slide-container[data-swiper-slide-index="0"] .js-slider-slide'
+)
+
+const sliderContainerMobile = document.querySelector(
+  '.js-home-slider-mobile .swiper-slide.slide-container[data-swiper-slide-index="0"] .js-slider-slide'
+)
+
+const countdownWrapper = `
+  <div class="countdown-wrapper">
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">Días</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label full">Minutos</span>
+            <span class="short">M</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label full">Segundos</span>
+            <span class="short">S</span>
+          </div>
+        </div>
+      </div>
+`
+
+if (sliderContainer) {
+  sliderContainer.insertAdjacentHTML('beforeend', countdownWrapper)
+}
+
+if (sliderContainerMobile) {
+  sliderContainerMobile.insertAdjacentHTML('beforeend', countdownWrapper)
+}
+
+const blackDaysDate = new Date(2025, 10, 28, 0, 0, 0).getTime()
+
+function updateCountdown() {
+  const now = new Date().getTime()
+  const distance = blackDaysDate - now
+
+  if (distance < 0) {
+    document.getElementById('countdown').innerHTML =
+      '<h2 style="color: #FFD700; font-size: 3rem; text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);">¡BLACK DAYS YA ESTÁ AQUÍ!</h2>'
+    return
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+  document.getElementById('days').textContent = String(days).padStart(2, '0')
+  document.getElementById('hours').textContent = String(hours).padStart(2, '0')
+  document.getElementById('minutes').textContent = String(minutes).padStart(2, '0')
+  document.getElementById('seconds').textContent = String(seconds).padStart(2, '0')
+}
+
+// Actualizar cada segundo
+updateCountdown()
+setInterval(updateCountdown, 1000)
+
 const footer = document.querySelector('.js-footer')
 
 if (footer) {
