@@ -1885,12 +1885,37 @@ const countdownWrapper = `
           <div class="countdown-item">
             <span class="countdown-number" id="minutes">00</span>
             <span class="countdown-label full">Minutos</span>
-            <span class="short">M</span>
+            <span class="countdown-label short">M</span>
           </div>
           <div class="countdown-item">
             <span class="countdown-number" id="seconds">00</span>
             <span class="countdown-label full">Segundos</span>
-            <span class="short">S</span>
+            <span class="countdown-label short">S</span>
+          </div>
+        </div>
+      </div>
+`
+
+const countdownWrapperMobile = `
+  <div class="countdown-wrapper">
+        <div class="countdown" id="countdown-mobile">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days-mobile">00</span>
+            <span class="countdown-label">Días</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours-mobile">00</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes-mobile">00</span>
+            <span class="countdown-label full">Minutos</span>
+            <span class="countdown-label short">M</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds-mobile">00</span>
+            <span class="countdown-label full">Segundos</span>
+            <span class="countdown-label short">S</span>
           </div>
         </div>
       </div>
@@ -1901,7 +1926,7 @@ if (sliderContainer) {
 }
 
 if (sliderContainerMobile) {
-  sliderContainerMobile.insertAdjacentHTML('beforeend', countdownWrapper)
+  sliderContainerMobile.insertAdjacentHTML('beforeend', countdownWrapperMobile)
 }
 
 const blackDaysDate = new Date(2025, 10, 28, 0, 0, 0).getTime()
@@ -1912,6 +1937,8 @@ function updateCountdown() {
 
   if (distance < 0) {
     document.getElementById('countdown').innerHTML =
+      '<h2 style="color: #FFD700; font-size: 3rem; text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);">¡BLACK DAYS YA ESTÁ AQUÍ!</h2>'
+    document.getElementById('countdown-mobile').innerHTML =
       '<h2 style="color: #FFD700; font-size: 3rem; text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);">¡BLACK DAYS YA ESTÁ AQUÍ!</h2>'
     return
   }
@@ -1925,6 +1952,11 @@ function updateCountdown() {
   document.getElementById('hours').textContent = String(hours).padStart(2, '0')
   document.getElementById('minutes').textContent = String(minutes).padStart(2, '0')
   document.getElementById('seconds').textContent = String(seconds).padStart(2, '0')
+
+  document.getElementById('days-mobile').textContent = String(days).padStart(2, '0')
+  document.getElementById('hours-mobile').textContent = String(hours).padStart(2, '0')
+  document.getElementById('minutes-mobile').textContent = String(minutes).padStart(2, '0')
+  document.getElementById('seconds-mobile').textContent = String(seconds).padStart(2, '0')
 }
 
 // Actualizar cada segundo
