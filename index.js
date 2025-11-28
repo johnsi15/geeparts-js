@@ -1921,13 +1921,13 @@ const countdownWrapperMobile = `
       </div>
 `
 
-if (sliderContainer) {
-  sliderContainer.insertAdjacentHTML('beforeend', countdownWrapper)
-}
+// if (sliderContainer) {
+//   sliderContainer.insertAdjacentHTML('beforeend', countdownWrapper)
+// }
 
-if (sliderContainerMobile) {
-  sliderContainerMobile.insertAdjacentHTML('beforeend', countdownWrapperMobile)
-}
+// if (sliderContainerMobile) {
+//   sliderContainerMobile.insertAdjacentHTML('beforeend', countdownWrapperMobile)
+// }
 
 const blackDaysDate = new Date(2025, 10, 28, 0, 0, 0).getTime()
 
@@ -1960,8 +1960,8 @@ function updateCountdown() {
 }
 
 // Actualizar cada segundo
-updateCountdown()
-setInterval(updateCountdown, 1000)
+// updateCountdown()
+// setInterval(updateCountdown, 1000)
 
 const footer = document.querySelector('.js-footer')
 
