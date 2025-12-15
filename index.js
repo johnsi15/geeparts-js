@@ -206,6 +206,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</a>
 	</li>
 	<li class="moto">
+		<a href="https://www.geeparts.co/hero/xpulse-rally/" class="link_marca">
+			<img src="https://download.geeparts.co/xpulse-rally.webp" alt="Xpulse Rally">
+		<div class="info">
+			<p>Xpulse Rally</p>
+		</div>
+		</a>
+	</li>
+	<li class="moto">
 		<a href="https://geeparts.co/hunk-160-R4V/" class="link_marca">
 			<img src="https://download.geeparts.co/Hunk160R4V.webp" alt="Hunk 160 R4V">
 		<div class="info">
@@ -753,6 +761,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
         <img src="https://download.geeparts.co/nx-190.png" alt="NX 190">
       <div class="info">
         <p>NX 190</p>
+       </div>
+       </a>
+     </li>
+    <li class="moto">
+      <a href="https://www.geeparts.co/honda/nx-190-2-0/" class="link_marca">
+        <img src="https://download.geeparts.co/nx-190-2.0.webp" alt="NX 190 2.0">
+      <div class="info">
+        <p>NX 190 2.0</p>
        </div>
        </a>
      </li>
@@ -1560,6 +1576,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/honda/nx-190/">NX 190</a>
           </li>
           <li class="new">
+            <a href="https://www.geeparts.co/honda/nx-190-2-0/">NX 190 2.0</a>
+          </li>
+          <li class="new">
             <a href="https://www.geeparts.co/honda/nx-500/">NX 500</a>
           </li>
           <li>
@@ -1724,6 +1743,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li>
             <a class="nav-list-link" href="https://www.geeparts.co/hero/xpulse-4v/">Xpulse 4v</a>
+          </li>
+          <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/hero/xpulse-rally">Xpulse Rally</a>
           </li>
           <li>
             <a class="nav-list-link" href="https://geeparts.co/hunk-160-R4V/">Hunk 160 R4V</a>
