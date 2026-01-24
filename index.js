@@ -472,6 +472,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
           </a>
         </li>
         <li class="moto">
+          <a href="https://www.geeparts.co/yamaha/xtz-150-abs/" class="link_marca">
+            <img src="https://download.geeparts.co/xtz-150-abs.webp" alt="XTZ 150 ABS">
+          <div class="info">
+            <p>XTZ 150 ABS</p>
+          </div>
+          </a>
+        </li>
+        <li class="moto">
           <a href="https://www.geeparts.co/yamaha/xtz-125/" class="link_marca">
             <img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1663643201/multiparts-colombia/yamaha/XTZ125_icet2k.png" alt="XTZ 125">
           <div class="info">
@@ -1462,6 +1470,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li>
             <a href="https://www.geeparts.co/yamaha/xtz-150/">XTZ 150</a>
           </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/xtz-150-abs/">XTZ 150 ABS</a>
+          </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/xtz-250/">XTZ 250</a>
           </li>          
@@ -1886,11 +1897,11 @@ if (window.matchMedia('(min-width: 768px)').matches) {
 }
 
 const sliderContainer = document.querySelector(
-  '.js-home-slider .swiper-slide.slide-container[data-swiper-slide-index="0"] .js-slider-slide'
+  '.js-home-slider .swiper-slide.slide-container[data-swiper-slide-index="0"] .js-slider-slide',
 )
 
 const sliderContainerMobile = document.querySelector(
-  '.js-home-slider-mobile .swiper-slide.slide-container[data-swiper-slide-index="0"] .js-slider-slide'
+  '.js-home-slider-mobile .swiper-slide.slide-container[data-swiper-slide-index="0"] .js-slider-slide',
 )
 
 const countdownWrapper = `
