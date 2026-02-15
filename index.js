@@ -263,6 +263,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</a>
 	</li>
   <li class="moto">
+		<a href="https://www.geeparts.co/suzuki/v-strom-800-de/" class="link_marca">
+			<img src="https://download.geeparts.co/v-strom-800-de.jpeg" alt="V-Storm 800 DE">
+		<div class="info">
+			<p>V-Storm 800 DE</p>
+		</div>
+		</a>
+	</li>
+  <li class="moto">
 		<a href="https://www.geeparts.co/suzuki/v-strom-650xt-at/" class="link_marca">
 			<img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1663641523/multiparts-colombia/suzuki/650xt_hwxbg8.png" alt="V-Strom 650 XT-AT">
 		<div class="info">
@@ -1397,6 +1405,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
            <a href="https://www.geeparts.co/suzuki/v-strom-250-sx/">V-strom 250 sx</a>
           </li>
           <li>
+           <a href="https://www.geeparts.co/suzuki/v-strom-800-de/">V-strom 800 DE</a>
+          </li>
+          <li>
             <a href="https://www.geeparts.co/suzuki/v-strom-1000dl/">V-strom 1000DL</a>
           </li>
           <li>
@@ -1410,6 +1421,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/v-strom-650abs/">V-strom 650ABS</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/v-strom-650dl/">V-strom 650DL</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/v-strom-650dl/">V-strom 650DL</a>
