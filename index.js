@@ -350,6 +350,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</div>
 		</a>
 	</li>
+  <li class="moto">
+		<a href="https://www.geeparts.co/suzuki/dr-160x/" class="link_marca">
+			<img src="https://download.geeparts.co/suzuki-dr-160x.png" alt="Suzuki DR 160X">
+		<div class="info">
+			<p>Suzuki DR 160X</p>
+		</div>
+		</a>
+	</li>
    <li class="moto">
 		<a href="https://www.geeparts.co/suzuki/gsr-750/" class="link_marca">
 			<img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1666304126/multiparts-colombia/suzuki/GSR_750_uzrax8.png" alt="GSR-750">
@@ -503,6 +511,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</div>
 		</a>
 	</li>
+         <li class="moto">
+		<a href="https://www.geeparts.co/yamaha/mt-03-2026/" class="link_marca">
+			<img src="https://download.geeparts.co/MT-03-2026.png" alt="MT 03 2026">
+		<div class="info">
+			<p>MT 03 2026</p>
+		</div>
+		</a>
+	</li>
     
     <li class="moto">
 		<a href="https://www.geeparts.co/yamaha/mt-07/" class="link_marca">
@@ -624,6 +640,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
             <img src="https://download.geeparts.co/Yamaha-YCZ-110.webp" alt="YCZ 110">
           <div class="info">
             <p>YCZ 110</p>
+          </div>
+          </a>
+        </li>
+        <li class="moto">
+          <a href="https://www.geeparts.co/yamaha/r15-v4/" class="link_marca">
+            <img src="https://download.geeparts.co/Yamaha-r15-v4.png" alt="R15 V4">
+          <div class="info">
+            <p>R15 V4</p>
           </div>
           </a>
         </li>
@@ -1434,6 +1458,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li class="new">
             <a href="https://www.geeparts.co/suzuki/suzuki-dr150-fi/">Suzuki DR150 FI</a>
           </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/suzuki/dr-160x/">Suzuki DR 160X</a>
+          </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/suzuki-dr200/">Suzuki DR200</a>
           </li>
@@ -1478,6 +1505,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
       <li>
         <a href="/yamaha">Yamaha</a>
         <ul class="menu_level_two">
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/r15-v4/">R15 V4</a>
+          </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/xtz-125/">XTZ 125</a>
           </li>
@@ -1510,6 +1540,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>          
           <li>
             <a href="https://www.geeparts.co/yamaha/mt-03/">MT 03</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/mt-03-2026/">MT 03 2026</a>
           </li>
           <li>
             <a href="https://www.geeparts.co/yamaha/mt-07/">MT 07</a>
@@ -2041,4 +2074,43 @@ if (footer) {
     `
 
   footer.parentNode.insertBefore(blockInfo, footer)
+}
+
+/**
+ * Función para insertar el scroll hint en páginas de secciones/modelos
+ * Solo aplica si la ruta tiene al menos dos niveles (ej: /yamaha/xtz-150/)
+ */
+function initScrollHint() {
+  const path = window.location.pathname.split('/').filter(p => p !== '');
+  
+  // Si la ruta tiene 2 o más segmentos (marca/modelo), es una sección de productos
+  if (path.length >= 2) {
+    const hint = document.createElement('div');
+    hint.id = 'scroll-hint';
+    hint.innerHTML = '<span class="arrow-sections">↓</span> Baja para cargar más productos, sigue haciendo scroll...';
+    
+    // Insertar al inicio del body
+    document.body.prepend(hint);
+
+    // Lógica de visibilidad al hacer scroll
+    window.addEventListener('scroll', () => {
+      const scrollBottom = document.documentElement.scrollHeight
+                         - window.scrollY
+                         - window.innerHeight;
+
+      // Se muestra cuando faltan 1500px para el final
+      if (scrollBottom < 1500 && scrollBottom > 100) {
+        hint.classList.add('visible');
+      } else {
+        hint.classList.remove('visible');
+      }
+    });
+  }
+}
+
+// Inicializar cuando el DOM esté listo
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initScrollHint);
+} else {
+  initScrollHint();
 }
