@@ -886,6 +886,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
         </a>
       </li>
         <li class="moto">
+        <a href="https://www.geeparts.co/bajaj/pulsar-n-160/" class="link_marca">
+          <img src="https://download.geeparts.co/pulsar-n-160.jpeg" alt="Pulsar N 160">
+        <div class="info">
+          <p>Pulsar N 160</p>
+        </div>
+        </a>
+      </li>
+        <li class="moto">
         <a href="https://www.geeparts.co/bajaj/pulsar-n-250/" class="link_marca">
           <img src="https://download.geeparts.co/pulsar-n-250.png" alt="Pulsar N 250">
         <div class="info">
@@ -1669,6 +1677,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-ns-200/">Pulsar NS 200</a>
           </li>          
           <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-n-160/">Pulsar N 160</a>
+          </li>
+          <li>
             <a class="nav-list-link" href="https://www.geeparts.co/bajaj/pulsar-n-250/">Pulsar N 250</a>
           </li>
           <li>
@@ -2081,36 +2092,34 @@ if (footer) {
  * Solo aplica si la ruta tiene al menos dos niveles (ej: /yamaha/xtz-150/)
  */
 function initScrollHint() {
-  const path = window.location.pathname.split('/').filter(p => p !== '');
-  
+  const path = window.location.pathname.split('/').filter(p => p !== '')
+
   // Si la ruta tiene 2 o más segmentos (marca/modelo), es una sección de productos
   if (path.length >= 2) {
-    const hint = document.createElement('div');
-    hint.id = 'scroll-hint';
-    hint.innerHTML = '<span class="arrow-sections">↓</span> Baja para cargar más productos, sigue haciendo scroll...';
-    
+    const hint = document.createElement('div')
+    hint.id = 'scroll-hint'
+    hint.innerHTML = '<span class="arrow-sections">↓</span> Baja para cargar más productos, sigue haciendo scroll...'
+
     // Insertar al inicio del body
-    document.body.prepend(hint);
+    document.body.prepend(hint)
 
     // Lógica de visibilidad al hacer scroll
     window.addEventListener('scroll', () => {
-      const scrollBottom = document.documentElement.scrollHeight
-                         - window.scrollY
-                         - window.innerHeight;
+      const scrollBottom = document.documentElement.scrollHeight - window.scrollY - window.innerHeight
 
       // Se muestra cuando faltan 1500px para el final
       if (scrollBottom < 1500 && scrollBottom > 100) {
-        hint.classList.add('visible');
+        hint.classList.add('visible')
       } else {
-        hint.classList.remove('visible');
+        hint.classList.remove('visible')
       }
-    });
+    })
   }
 }
 
 // Inicializar cuando el DOM esté listo
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initScrollHint);
+  document.addEventListener('DOMContentLoaded', initScrollHint)
 } else {
-  initScrollHint();
+  initScrollHint()
 }
