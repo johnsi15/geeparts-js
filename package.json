@@ -1,6 +1,6 @@
 {
   "name": "geeparts-js",
-  "version": "1.5.13",
+  "version": "1.5.15",
   "description": "Code main page Geeparts",
   "main": "index.js",
   "scripts": {

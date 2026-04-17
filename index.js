@@ -398,6 +398,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 		</div>
 		</a>
 	</li>
+    <li class="moto">
+		<a href="https://www.geeparts.co/suzuki/gn-125-abs/" class="link_marca">
+			<img src="https://download.geeparts.co/suzuki-gn-125-abs.png" alt="GN 125 ABS">
+		<div class="info">
+			<p>GN 125 ABS</p>
+		</div>
+		</a>
+	</li>
      <li class="moto">
 		<a href="https://www.geeparts.co/suzuki/gixxer-150-sf/" class="link_marca">
 			<img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1690933464/multiparts-colombia/suzuki/gixxer_150_sf_xznsi0.jpg" alt="Gixxer 150 sf">
@@ -419,6 +427,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 			<img src="https://download.geeparts.co/ax-4.png" alt="Suzuki AX4">
 		<div class="info">
 			<p>Suzuki AX4</p>
+		</div>
+		</a>
+	</li>
+  <li class="moto">
+		<a href="https://www.geeparts.co/suzuki/gsxs-750/" class="link_marca">
+			<img src="https://download.geeparts.co/gsxs-750.png" alt="Suzuki GSXS 750">
+		<div class="info">
+			<p>Suzuki GSXS 750</p>
 		</div>
 		</a>
 	</li>
@@ -1504,6 +1520,12 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li>
             <a href="https://www.geeparts.co/suzuki/gn-125/">GN 125</a>
+          </li>
+          <li>
+            <a href="https://www.geeparts.co/suzuki/gn-125-abs/">GN 125 ABS</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/suzuki/gsxs-750/">Suzuki GSXS 750</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/suzuki/gsxs-1000/">Suzuki GSX-S1000</a>
