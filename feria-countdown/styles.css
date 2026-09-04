@@ -1,0 +1,150 @@
+.countdown-wrap {
+  width: 100%;
+  max-width: 680px;
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: 40px auto 0;
+}
+
+.banner-bg {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2200 50%, #1a1a1a 100%);
+  border: 1.5px solid #f5c400;
+  border-radius: 12px;
+  padding: 36px 28px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.corner-accent {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-color: #f5c400;
+  border-style: solid;
+  opacity: 0.7;
+}
+
+.corner-tl {
+  top: 10px;
+  left: 10px;
+  border-width: 2px 0 0 2px;
+}
+.corner-tr {
+  top: 10px;
+  right: 10px;
+  border-width: 2px 2px 0 0;
+}
+.corner-bl {
+  bottom: 10px;
+  left: 10px;
+  border-width: 0 0 2px 2px;
+}
+.corner-br {
+  bottom: 10px;
+  right: 10px;
+  border-width: 0 2px 2px 0;
+}
+
+.divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f5c400, transparent);
+  width: 80%;
+  margin: 0 auto 24px;
+  border-radius: 1px;
+}
+
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.unit-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit-number {
+  background: #000;
+  border: 2px solid #f5c400;
+  border-radius: 8px;
+  min-width: 80px;
+  padding: 12px 10px 10px;
+  font-size: clamp(44px, 10vw, 64px);
+  font-weight: 900;
+  color: #f5c400;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 0 14px rgba(245, 196, 0, 0.55);
+  position: relative;
+  overflow: hidden;
+}
+
+.unit-number::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(245, 196, 0, 0.2);
+}
+
+.unit-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.sep {
+  font-size: clamp(40px, 9vw, 60px);
+  font-weight: 900;
+  color: #f5c400;
+  opacity: 0.6;
+  line-height: 1;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+
+.finished-msg {
+  font-size: clamp(20px, 5vw, 32px);
+  font-weight: 900;
+  color: #f5c400;
+  text-transform: uppercase;
+  padding: 20px 0;
+  text-shadow: 0 0 20px rgba(245, 196, 0, 0.5);
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .unit-number {
+    min-width: 60px;
+    padding: 10px 6px 8px;
+    font-size: 28px;
+  }
+  .banner-bg {
+    margin: 0 10px;
+    padding: 36px 0;
+  }
+  .sep {
+    font-size: 36px;
+  }
+  .countdown-grid {
+    gap: 6px;
+  }
+  .countdown-wrap {
+    margin-top: 0;
+    transform: translateY(-10%);
+  }
+}

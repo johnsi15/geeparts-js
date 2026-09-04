@@ -4,17 +4,17 @@ function createSocialBar() {
   const socialNetworks = [
     {
       name: 'whatsapp',
-      url: 'https://wa.me/573043538612?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
+      url: 'https://wa.me/573002364405?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/whatsapp-web.png',
     },
     {
       name: 'sistecredito',
-      url: 'https://wa.me/573043538612?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
+      url: 'https://wa.me/573002364405?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/sistecredito-web.png',
     },
     {
       name: 'pago_contra_entrega',
-      url: 'https://wa.me/573043538612?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
+      url: 'https://wa.me/573002364405?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/pago-contraentrega-web.png',
     },
   ]
@@ -41,56 +41,74 @@ elementCategorysHome.innerHTML = `
   <ul class="categorys_home">
   <li>
     <a href="https://geeparts.co/search/?q=defensas" target="_blank">
-      <img src="https://download.geeparts.co/defensa.jpg" alt="Defensas" width="260" height="320" loading="lazy">
+      <img src="https://download.geeparts.co/productos-destacados/defensa.png" alt="Defensas" width="260" height="320" loading="lazy">
     </a>
     <h2 class="category_title">
       <a href="https://geeparts.co/search/?q=defensas" target="_blank">
-        Defensas
+        Defensa
       </a>
     </h2>
   </li>
   <li>
     <a href="https://geeparts.co/search/?q=sliders" target="_blank">
-      <img src="https://download.geeparts.co/slider-ruedas-2.jpg" alt="Sliders" width="260" height="320" loading="lazy">
+      <img src="https://download.geeparts.co/productos-destacados/slider.png" alt="Sliders" width="260" height="320" loading="lazy">
     </a>
     <h2 class="category_title">
-      <a href="https://geeparts.co/search/?q=defensas" target="_blank">Sliders</a>
+      <a href="https://geeparts.co/search/?q=sliders" target="_blank">Slider</a>
     </h2>
   </li>
   <li>
-    <a href="https://geeparts.co/search/?q=carter" target="_blank">
-      <img src="https://download.geeparts.co/protector-carter-2.jpg" alt="Protector de Cárter" width="260" height="320" loading="lazy">
+    <a href="https://geeparts.co/search/?q=base+de+maleta" target="_blank">
+      <img src="https://download.geeparts.co/productos-destacados/base-de-maleta.png" alt="Base de Maleta" width="260" height="320" loading="lazy">
     </a>
     <h2 class="category_title">
-      <a href="https://geeparts.co/search/?q=carter" target="_blank">Cárter</a>
+      <a href="https://geeparts.co/search/?q=base+de+maleta" target="_blank">Base de Maleta</a>
     </h2>
   </li>
+  
+  <li>
+    <a href="https://geeparts.co/search/?q=baul" target="_blank">
+      <img src="https://download.geeparts.co/productos-destacados/baul.png" alt="Baul" width="260" height="320" loading="lazy">
+    </a>
+    <h2 class="category_title">
+      <a href="https://geeparts.co/search/?q=baul" target="_blank">Baul</a>
+    </h2>
+  </li>
+
   <li>
     <a href="https://geeparts.co/search/?q=caballete" target="_blank">
-      <img src="https://download.geeparts.co/caballete.jpg" alt="Caballete" width="260" height="320" loading="lazy">
+      <img src="https://download.geeparts.co/productos-destacados/caballete.png" alt="Caballete" width="260" height="320" loading="lazy">
     </a>
     <h2 class="category_title">
       <a href="https://geeparts.co/search/?q=caballete" target="_blank">Caballete</a>
     </h2>
   </li>
+
   <li>
-    <a href="https://geeparts.co/search/?q=maleta" target="_blank">
-      <img src="https://download.geeparts.co/maleta.jpg" alt="Maletas" width="260" height="320" loading="lazy">
+    <a href="https://geeparts.co/search/?q=carter" target="_blank">
+      <img src="https://download.geeparts.co/productos-destacados/carter.png" alt="Protector de Cárter" width="260" height="320" loading="lazy">
     </a>
     <h2 class="category_title">
-      <a href="https://geeparts.co/search/?q=maleta" target="_blank">Maletas</a>
-    </h2>
-  </li>
-  <li>
-    <a href="https://geeparts.co/search/?q=parrilla" target="_blank">
-      <img src="https://download.geeparts.co/parrilla.jpg" alt="Parrillas" width="260" height="320" loading="lazy">
-    </a>
-    <h2 class="category_title">
-      <a href="https://geeparts.co/search/?q=parrilla" target="_blank">Parrillas</a>
+      <a href="https://geeparts.co/search/?q=carter" target="_blank">Cárter</a>
     </h2>
   </li>
 </ul>
 `
+
+function bannerSliderDown() {
+  const slider = document.querySelector('.js-home-main-slider-visibility.section-slider')
+
+  if (slider) {
+    const img = document.createElement('img')
+    img.src = 'https://download.geeparts.co/hecho-en-colombia.png'
+    img.alt = 'Hecho en Colombia'
+    img.classList.add('hecho-en-colombia')
+    slider.appendChild(img)
+  }
+}
+
+bannerSliderDown()
+
 function loadGoogleReviewsWidget() {
   const script = document.createElement('script')
   script.src = 'https://mayoristas.geeparts.co/dist/google-reviews-widget.js?placeId=ChIJqXT0dMtFZo4Rr6CjO86gvF0'
@@ -443,6 +461,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
 			<img src="https://download.geeparts.co/gsxs-1000.png" alt="Suzuki GSXS 1000">
 		<div class="info">
 			<p>Suzuki GSXS 1000</p>
+		</div>
+		</a>
+	</li>
+  <li class="moto">
+		<a href="https://www.geeparts.co/suzuki/gsx-8s/" class="link_marca">
+			<img src="https://download.geeparts.co/GSX-8S.jpeg" alt="GSX 8S">
+		<div class="info">
+			<p>Suzuki GSX 8S</p>
 		</div>
 		</a>
 	</li>
@@ -1112,6 +1138,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
         </div>
         </a>
       </li>
+      <li class="moto">
+        <a href="https://www.geeparts.co/ktm/duke-250-2026/" class="link_marca">
+          <img src="https://download.geeparts.co/duke-250.png" alt="Duke 250 2026">
+        <div class="info">
+          <p>Duke 250 2026</p>
+        </div>
+        </a>
+      </li>
     </ul>
     </div>
   `
@@ -1305,6 +1339,22 @@ if (pathName === '/hero/' || pathName === '/hero') {
           <img src="https://download.geeparts.co/cf-moto-450-sr.webp" alt="SR 450">
         <div class="info">
           <p>SR 450</p>
+        </div>
+        </a>
+      </li>
+      <li class="moto">
+        <a href="https://www.geeparts.co/cf-moto/650-gt" class="link_marca">
+          <img src="https://download.geeparts.co/650GT.png" alt="650 GT">
+        <div class="info">
+          <p>650 GT</p>
+        </div>
+        </a>
+      </li>
+      <li class="moto">
+        <a href="https://www.geeparts.co/cf-moto/cflite-250-dual" class="link_marca">
+          <img src="https://download.geeparts.co/CF-LITE-250-DUAL.png" alt="CF Lite 250 Dual">
+        <div class="info">
+          <p>CF Lite 250 Dual</p>
         </div>
         </a>
       </li>
@@ -1526,6 +1576,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/suzuki/gsxs-750/">Suzuki GSXS 750</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/suzuki/gsx-8s/">Suzuki GSX 8S</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/suzuki/gsxs-1000/">Suzuki GSX-S1000</a>
@@ -1778,6 +1831,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/ktm/duke-200/">Duke 200</a>
           </li>
           <li>
+            <a href="https://www.geeparts.co/ktm/duke-250-2026/">Duke 250 2026</a>
+          </li>
+          <li>
             <a href="https://www.geeparts.co/ktm/duke-200-g3/">Duke 200 g3</a>
           </li>
           <li>
@@ -1859,6 +1915,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-650/">NK 650</a>
           </li>
           <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/650-gt/">650 GT</a>
+          </li>
+          <li>
             <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/nk-800/">NK 800</a>
           </li>
           <li>
@@ -1867,33 +1926,16 @@ if (window.matchMedia('(min-width: 768px)').matches) {
           <li>
             <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/sr-450/">SR 450</a>
           </li>
+          <li>
+            <a class="nav-list-link" href="https://www.geeparts.co/cf-moto/cflite-250-dual">CF Lite 250 Dual</a>
+          </li>
         </ul>
       </li>
       <li>
         <a href="/slider-de-granada">Slider Nuevos</a>
       </li>
       <li>
-        <a href="/maletas/">Maletas</a>
-        <ul class="menu_level_two">
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/maletas/39-litros/">39 Litros</a>
-          </li>
-            <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/maletas/49-litros/">49 Litros</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/maletas/59-litros/">59 Litros</a>
-          </li>
-            <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/maletas/lateral-de-32-litros/">Lateral de 32 Litros</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/maletas/lateral-de-42-litros/">Lateral de 42 Litros</a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="https://www.geeparts.co/maletas/lateral-de-52-litros/">Lateral de 52 Litros</a>
-          </li>
-        </ul>
+        <a href="/baul">Baúl</a>
        </li>
        <li class="otras">
         <a href="#">Otras</a>
@@ -1930,14 +1972,37 @@ if (window.matchMedia('(min-width: 768px)').matches) {
               </li>
             </ul>
           </li>
+          <li>
+            <a href="/maletas">Maletas</a>
+            <ul class="menu_level_three">
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/maletas/39-litros/">39 Litros</a>
+              </li>
+                <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/maletas/49-litros/">49 Litros</a>
+              </li>
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/maletas/59-litros/">59 Litros</a>
+              </li>
+                <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/maletas/lateral-de-32-litros/">Lateral de 32 Litros</a>
+              </li>
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/maletas/lateral-de-42-litros/">Lateral de 42 Litros</a>
+              </li>
+              <li>
+                <a class="nav-list-link" href="https://www.geeparts.co/maletas/lateral-de-52-litros/">Lateral de 52 Litros</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li class="universales">
         <a href="#">Universales</a>
         <ul class="menu_level_two">
           <li><a href="/manubrios">Manubrios</a></li> 
+          <li><a href="/jabones-de-defensa">Jabones de defensa</a></li> 
           <li><a href="/sliders">Sliders</a></li>
-          <li><a href="/baul">Baúl</a></li>
           <li><a href="/spools">Spools</a></li>
           <li><a href="/caballetetrasero">Caballete trasero</a></li>      
           <li><a href="/porta-placas">Porta placas</a></li>      

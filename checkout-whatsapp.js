@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
         $campo.closest('.form-row').prepend(
           `<ul class="woocommerce-error" role="alert">
                         <li>${mensajeError}</li>
-                    </ul>`
+                    </ul>`,
         )
       }
     })
@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
       $email.closest('.form-row').prepend(
         `<ul class="woocommerce-error" role="alert">
                     <li>Introduce una dirección de correo electrónico válida</li>
-                </ul>`
+                </ul>`,
       )
     }
 
@@ -130,7 +130,7 @@ jQuery(document).ready(function ($) {
         {
           scrollTop: $('.woocommerce-error').first().offset().top - 100,
         },
-        500
+        500,
       )
 
       return false
@@ -189,7 +189,7 @@ jQuery(document).ready(function ($) {
 
   // ALTERNATIVA: Función para probar directamente la apertura de WhatsApp
   window.testWhatsApp = function () {
-    var numero = '573043538612'
+    var numero = '573002364405'
     var mensaje = encodeURIComponent('Hola, esto es una prueba')
     abrirWhatsApp(numero, mensaje)
   }

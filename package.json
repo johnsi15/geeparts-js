@@ -1,11 +1,17 @@
 {
   "name": "geeparts-js",
-  "version": "1.5.15",
+  "version": "1.6.6",
   "description": "Code main page Geeparts",
   "main": "index.js",
   "scripts": {
     "test": "echo 'Hello world'",
-    "build": "node build.js"
+    "build": "node build.js",
+    "pub:check": "npm whoami && npm ping && npm publish --dry-run",
+    "pub": "npm run build && npm run pub:check && npm publish --access public --auth-type=legacy",
+    "pub:otp": "npm run build && npm run pub:check && npm publish --access public --auth-type=legacy --otp=$NPM_OTP",
+    "release:patch": "npm version patch --no-git-tag-version --allow-same-version=false && npm run pub",
+    "release:minor": "npm version minor --no-git-tag-version --allow-same-version=false && npm run pub",
+    "release:major": "npm version major --no-git-tag-version --allow-same-version=false && npm run pub"
   },
   "files": [
     "dist/",

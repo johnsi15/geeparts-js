@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Countdown Feria</title>
+    <link rel="stylesheet" href="feria-countdown/styles.css">
+    <style>
+        body { margin: 0; background: #333; font-family: sans-serif; }
+        .slider-container-mock {
+            width: 100%;
+            height: 600px;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swiper-slide slide-container swiper-slide-active" style="width: 100%; height: 600px; position: relative; display: block;">
+        <div class="js-slider-slide slider-slide" style="height: 100%;">
+            <img width="1600" height="741" class="slider-image" alt="Carrusel 1" src="https://download.geeparts.co/feria/count-d.png">
+            
+            <!-- El contador se insertará aquí -->
+            <div id="countdown-root"></div>
+        </div>
+    </div>
+
+    <script>
+        // Simulación de carga dinámica
+        fetch('feria-countdown/index.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('countdown-root').innerHTML = html;
+                
+                // Cargar el JS
+                const script = document.createElement('script');
+                script.src = 'feria-countdown/widget.js';
+                document.body.appendChild(script);
+            });
+    </script>
+</body>
+</html>

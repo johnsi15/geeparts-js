@@ -28,3 +28,38 @@ npm publish --access public
 # Esto simula la publicación y te muestra qué archivos serán subidos.
 npm publish --dry-run
 ```
+
+### Flujo recomendado (para no pelear con npm cada vez)
+
+```shell
+# 1) Validar que todo esta bien (token, conexion y contenido del paquete)
+npm run pub:check
+
+# 2) Subir una nueva version + publicar en un solo comando
+npm run release:patch
+```
+
+Tambien tienes disponibles:
+
+```shell
+npm run release:minor
+npm run release:major
+```
+
+Si tu cuenta tiene 2FA para writes y no usas token Automation, publica con OTP:
+
+```shell
+export NPM_OTP=123456
+npm run pub:otp
+```
+
+### Errores tipicos y solucion rapida
+
+- `You cannot publish over the previously published versions`:
+   - Ya existe esa version. Ejecuta `npm run release:patch`.
+- `ENEEDAUTH` o `E401`:
+   - Token vencido o invalido. Regenera token Automation y actualiza `.npmrc`.
+- `This operation requires a one-time password`:
+   - Tu cuenta exige OTP para publicar. Usa `npm run pub:otp` o crea token Classic Automation.
+- `E403` con paquete publico:
+   - Asegura `npm publish --access public`.
