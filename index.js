@@ -1433,6 +1433,14 @@ if (pathName === '/hero/' || pathName === '/hero') {
         </div>
         </a>
       </li>
+      <li class="moto">
+        <a href="https://www.geeparts.co/akt/voge-xrs-180" class="link_marca">
+          <img src="https://download.geeparts.co/voge-xrs-180.webp" alt="Voge XRS 180">
+        <div class="info">
+          <p>Voge XRS 180</p>
+        </div>
+        </a>
+      </li>
     </ul>
     </div>
   `
@@ -1953,6 +1961,9 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <ul class="menu_level_three">
               <li>
                 <a class="nav-list-link" href="https://www.geeparts.co/akt/voge-300-ds/">Voge 300 DS</a>
+              </li>
+              <li class="new">
+                <a class="nav-list-link" href="https://www.geeparts.co/akt/voge-xrs-180/">Voge XRS 180</a>
               </li>
             </ul>
           </li> 
