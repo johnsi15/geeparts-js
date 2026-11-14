@@ -291,6 +291,41 @@ async function buildModalWorldCup() {
   }
 }
 
+async function buildBlackDays() {
+  try {
+    const css = fs.readFileSync('black-friday-countdown/styles.css', 'utf8')
+    const widget = fs.readFileSync('black-friday-countdown/widget.js', 'utf8')
+    for (const variant of ['detal', 'mayoristas']) {
+      await esbuild.build({
+        stdin: {
+          contents: `
+            if (!document.getElementById('geeparts-blackdays-styles')) {
+              const style = document.createElement('style');
+              style.id = 'geeparts-blackdays-styles';
+              style.textContent = ${JSON.stringify(css)};
+              document.head.appendChild(style);
+            }
+            ${widget}
+            initBlackDays(${JSON.stringify(variant)});
+          `,
+          resolveDir: __dirname,
+        },
+        bundle: true,
+        minify: true,
+        sourcemap: true,
+        target: ['es2015'],
+        outfile: `dist/black-friday-${variant}-countdown.min.js`,
+        format: 'iife',
+      })
+    }
+    console.log('✅ Black Days detal y mayoristas generados')
+  } catch (error) {
+    console.error('❌ Black Days Build failed:', error)
+    process.exitCode = 1
+  }
+}
+
+buildBlackDays()
 build()
 buildFeria()
 buildFeriaMayorista()

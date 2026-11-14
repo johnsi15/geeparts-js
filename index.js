@@ -621,9 +621,17 @@ if (pathName === '/hero/' || pathName === '/hero') {
 	</li>
           <li class="moto">
           <a href="https://www.geeparts.co/yamaha/n-max-connect/" class="link_marca">
-            <img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1663643191/multiparts-colombia/yamaha/N-MAX_CONNECT_kueym7.png" alt="N-MAX CONNECT">
+            <img src="https://res.cloudinary.com/multiparts-colombia/image/upload/v1663643191/multiparts-colombia/yamaha/N-MAX_CONNECT_kueym7.png" alt="Nmax Connected">
           <div class="info">
-            <p>N-MAX CONNECT</p>
+            <p>Nmax Connected</p>
+          </div>
+          </a>
+        </li>
+          <li class="moto">
+          <a href="https://www.geeparts.co/yamaha/nmax-v3/" class="link_marca">
+            <img src="https://download.geeparts.co/nmx-v3.webp" alt="Nmax v3">
+          <div class="info">
+            <p>Nmax v3</p>
           </div>
           </a>
         </li>
@@ -1654,7 +1662,10 @@ if (window.matchMedia('(min-width: 768px)').matches) {
             <a href="https://www.geeparts.co/yamaha/mt-15/">MT 15</a>
           </li> 
           <li>
-            <a href="https://www.geeparts.co/yamaha/n-max-connect/">N-MAX CONNECT</a>
+            <a href="https://www.geeparts.co/yamaha/n-max-connect/">Nmax Connected</a>
+          </li>
+          <li class="new">
+            <a href="https://www.geeparts.co/yamaha/nmax-v3/">Nmax v3</a>
           </li>
           <li class="new">
             <a href="https://www.geeparts.co/yamaha/aerox-155/">Aerox 155</a>

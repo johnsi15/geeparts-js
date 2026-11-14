@@ -1,0 +1,77 @@
+.gb-blackdays-host {
+  position: relative !important;
+  padding: 0 !important;
+}
+.gb-blackdays-host > :not(.gb-blackdays) { display: none !important; }
+.gb-blackdays {
+  position: relative;
+  width: 100%;
+  container-type: inline-size;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+}
+.gb-blackdays picture,
+.gb-blackdays img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.gb-blackdays__timer {
+  position: absolute;
+  left: 71%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: 33%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7cqw;
+  text-align: center;
+}
+.gb-blackdays--mayoristas .gb-blackdays__timer { left: 75%; }
+.gb-blackdays__item {
+  min-width: 0;
+  padding: 1.15cqw 0.2cqw;
+  background: #111;
+  border: 0.12cqw solid #f5ce00;
+  border-radius: 0.5cqw;
+}
+.gb-blackdays__number {
+  display: block;
+  color: #ffdc00;
+  font-size: 3.4cqw;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.gb-blackdays__label {
+  display: block;
+  margin-top: 0.5cqw;
+  color: #fff;
+  font-size: 0.75cqw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.gb-blackdays__message {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #111;
+  font-size: 2cqw;
+  font-weight: 800;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .gb-blackdays .gb-blackdays__timer {
+    left: 50%;
+    top: 79%;
+    width: 78%;
+    gap: 1.5cqw;
+  }
+  .gb-blackdays__item {
+    padding: 3cqw 0.5cqw;
+    border-width: 0.3cqw;
+    border-radius: 1cqw;
+  }
+  .gb-blackdays__number { font-size: 8cqw; }
+  .gb-blackdays__label { margin-top: 1.2cqw; font-size: 1.8cqw; }
+  .gb-blackdays__message { font-size: 5cqw; }
+}

@@ -1,0 +1,1 @@
+initBlackDays('detal')
