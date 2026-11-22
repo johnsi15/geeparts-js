@@ -1,27 +1,30 @@
 function createSocialBar() {
   const socialBar = document.createElement('div')
   socialBar.className = 'social-bar'
+  const productName = document.querySelector('h1.js-product-name')?.textContent.trim()
+  const message = productName
+    ? `Hola, vengo de la tienda web y estoy viendo este producto: ${productName}. ¿Me das más información?`
+    : 'Hola, vengo del sitio web Geeparts y quisiera más información.'
+  const whatsappUrl = new URL('https://wa.me/573002364405')
+  whatsappUrl.searchParams.set('text', message)
   const socialNetworks = [
     {
       name: 'whatsapp',
-      url: 'https://wa.me/573002364405?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/whatsapp-web.png',
     },
     {
       name: 'sistecredito',
-      url: 'https://wa.me/573002364405?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/sistecredito-web.png',
     },
     {
       name: 'pago_contra_entrega',
-      url: 'https://wa.me/573002364405?text=Hola%20vengo%20del%20sitio%20web%20Geeparts%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20',
       image: 'https://download.geeparts.co/pago-contraentrega-web.png',
     },
   ]
 
   socialNetworks.forEach(network => {
     const link = document.createElement('a')
-    link.href = network.url
+    link.href = whatsappUrl.href
     link.className = network.name
     link.target = '_blank'
 
